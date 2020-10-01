@@ -31,9 +31,7 @@ async function fetchRates(e) { //creating function to fetch the results from the
         })
         .then(function (json) {//takes the return from previous .then statement and sets it up in json argument to be used in the displayResults function
             console.log(json);
-            for (const [symbol, rate] of Object.entries(json.rates)) {
-                console.log(`${symbol}: ${rate}`);
-            }
+
             
             displayResults(json);//runs the displayResults function with the object from the json argument passed from the first .then
         })
@@ -80,7 +78,7 @@ function displayResults(json) {//using the json argument in the promise returned
     convTitle.textContent = ccSymbol;
     let convAmount = document.createElement('p');
     convAmount.setAttribute('class', 'card-text');
-    convAmount.textContent = `You have ${coinz.value} ${symbol} coins worth $${usdValue2}.`
+    convAmount.textContent = `${coinz.value} ${symbol} worth $${usdValue2}.`
     let convDateSection = document.createElement('p');
     convDateSection.setAttribute('class', 'card-text');
     let convDate = document.createElement('small');

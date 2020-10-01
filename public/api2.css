@@ -1,7 +1,7 @@
-body:after {
-    content: none;
+/* Nav bar fixes */
+.navbar {
+    padding-bottom: 0;
 }
-.popover-title { display: none; }
 
 /* Conversion Box Styles */
 html,
@@ -13,22 +13,24 @@ body {
     border-radius: 0 !important;
 }
 
-body {
+/* body {
     background: linear-gradient(#2255c5, #0c3eab);
-    height: 100%;
+
+} */
+
+#myTabContent {
+    background: linear-gradient(#2255c5, #0c3eab);
+    height: 100vh;
+    overflow: auto;
+
+
 }
 
-.convertForm {
+.dataForm {
     background-color: #e9ecef;
     padding: 3rem;
     border-radius: 4px;
-    margin: 5rem 0 5rem;
     box-shadow: 0px 1px 2px rgba(0,0,0,.6);
-}
-
-.convertResults {
-    float:right;
-    font-size: 25px;
 }
 
 .results {
@@ -39,7 +41,10 @@ body {
     box-shadow: 0px 1px 2px rgba(0,0,0,.6);   
 }
 
-
+.coinIcon {
+    max-width: 50px;
+    margin: 20px auto 5px 20px;
+}
 @media (min-width: 576px) {
 
 }
