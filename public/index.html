@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="api2.css"
+
+    <title>CryptoConverter</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item bg-dark" role="presentation">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Convert</a>
+            </li>
+            <li class="nav-item bg-dark" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">About</a>
+            </li>
+        </ul>
+    </nav>
+            
+<!--Content for tab content panes-->
+      <div class="tab-content" id="myTabContent">
+          <!--Home Tab-->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <!--Hero-->
+            <div class="jumbotron nocorner">
+                <h1 class="display-4">Greetings, traveller!</h1>
+                <p class="lead">This is a simple cryptocurrency converter. Enter the amount of cryptocoins below, and the converter will display the value of the cryptocoins in dollar dollar bills, y'all (USD). Ka-ching.</p>
+            </div>
+            <!--Convert box-->
+            <div class="container convert">
+                <form class="convertForm">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Select Crypto Currency</label>
+                        <select class="form-control" id="coinSelect">
+                          <option value="BTC">BTC - Bitcoin</option>
+                          <option value="ETH">ETH - Ethereum</option>
+                          <option value="LTC">LTC - Litecoin</option>
+                          <option value="USDT">USDT - Tether</option>
+                          <option value="BCH">BCH - Bitcoin Cash</option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Enter amount of cryptocoins...</label>
+                      <input id="coinz" type="number" min=0 class="form-control" id="exampleFormControlInput1" placeholder="Amount of cryptocoins...">
+                    </div>
+
+                    <div class="form-group">
+                        <button id="convertBtn" type="submit" class="btn btn-success">Convert</button>
+
+
+                    </div>
+                </form>
+                
+            </div>
+            <div class="container convert">
+                <section></section>
+            </div>
+        </div>
+        <!--Historical Tab
+        <div class="tab-pane fade" id="coulda" role="tabpanel" aria-labelledby="profile-tab">Coulda!</div>
+        -->
+        <!--About Tab-->
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      </div>
+    
+    <!--Adding Bootstrap JS Functionalities-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript" src="api2.js"></script>
+
+</html>
