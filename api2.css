@@ -22,8 +22,6 @@ body {
     background: linear-gradient(#2255c5, #0c3eab);
     height: 100vh;
     overflow: auto;
-
-
 }
 
 .dataForm {
@@ -31,6 +29,7 @@ body {
     padding: 3rem;
     border-radius: 4px;
     box-shadow: 0px 1px 2px rgba(0,0,0,.6);
+    margin-bottom: 25px;
 }
 
 .results {
@@ -43,7 +42,7 @@ body {
 
 .coinIcon {
     max-width: 50px;
-    margin: 20px auto 5px 20px;
+    margin: 25px auto 5px 20px;
 }
 @media (min-width: 576px) {
 

@@ -34,16 +34,19 @@
             <!--Convert box-->
             <div class="container convert dataForm">
                 
-                <form>
+                <form id="conversionForm">
                     <h5 class="card-title">Find Crypto Value in USD</h5>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Select Crypto Currency</label>
                         <select class="form-control" id="coinSelect">
-                          <option value="BTC">BTC - Bitcoin</option>
-                          <option value="ETH">ETH - Ethereum</option>
-                          <option value="LTC">LTC - Litecoin</option>
-                          <option value="USDT">USDT - Tether</option>
-                          <option value="BCH">BCH - Bitcoin Cash</option>
+                            <option value="BTC">BTC - Bitcoin</option>
+                            <option value="BCH">BCH - Bitcoin Cash</option>
+                            <option value="EOS">EOS - EOS</option>
+                            <option value="ETH">ETH - Ethereum</option>
+                            <option value="LTC">LTC - Litecoin</option>
+                            <option value="USDT">USDT - Tether</option>
+                            <option value="XMR">XMR - Moreno</option>
+                            <option value="XRP">XRP - Ripple</option>
                         </select>
                       </div>
                     <div class="form-group">
@@ -60,7 +63,7 @@
                 
             </div>
             <div class="container">
-                <section></section>
+                <section id="convSection"></section>
             </div>
         </div>
 
@@ -75,20 +78,24 @@
                 <p class="lead">Turn your dollars into sense. Here you can see how much cryptocurrency you could purchase using your US dollars.</p>
             </div>
             <div class="container convert dataForm">
-                <form>
+                <form id="buyPowerForm">
                     <h5 class="card-title">Find USD Value in Crypto</h5>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Enter dollar amount...</label>
-                        <input id="coinz" type="number" min=0 class="form-control" id="exampleFormControlInput1" step=any placeholder="Amount of dollars...">
+                        <input id="dollaz" type="number" min=0 class="form-control" id="exampleFormControlInput1" step=any placeholder="Amount of dollars...">
                       </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Select Crypto Currency</label>
                         <select class="form-control" id="coinSelect">
                           <option value="BTC">BTC - Bitcoin</option>
+                          <option value="BCH">BCH - Bitcoin Cash</option>
+                          <option value="EOS">EOS - EOS</option>
                           <option value="ETH">ETH - Ethereum</option>
                           <option value="LTC">LTC - Litecoin</option>
                           <option value="USDT">USDT - Tether</option>
-                          <option value="BCH">BCH - Bitcoin Cash</option>
+                          <option value="XMR">XMR - Moreno</option>
+                          <option value="XRP">XRP - Ripple</option>
+
                         </select>
                       </div>
 
@@ -102,14 +109,7 @@
                 
             </div>
             <div class="container">
-                <div class="card">
-                    <img class="card-img-bottom coinIcon" src="./assets/bitcoin.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+                <section id="bpSection"></section>
             </div>
         </div>
       </div>
